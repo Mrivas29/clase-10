@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- NO OLVIDES LOS METADATOS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+      body{font-family: 'Merriweather', serif;
+    }
+    .fucsia{
+      background-color: #d0f
+    }
+    </style>
+    <title>Bootstrap</title>
+</head>
+
+<body class="bg-light pt-5">
+
+  <nav class="navbar navbar-expand-lg navbar-light fucsia fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="index.html">Arrecifes Coralinos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Arrecifes de Coral</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page-1.html">Diversidad</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="page-2.html">Blanquemiento</a>
+        </li>
+      </ul>
+  </div>
+    </div>
+  </nav>
+
+
+    <div class="container py-3">
+        <div class="row">
+            <header class="col-12 mb-3">
+                <h1 class="display-4 text-primary-50 py-3">Arrecifes de Coral</h1>
+                <p class="lead">El planeta bajo el agua arrecifes</p>
+                <p> Documental sobre los arrecifes, un mundo bajo el agua, de diversos tipos de animales, algas y otras especies que conviven.</p>
+            </header>
+            <section class="col-12 pt-3 bg-white">
+            <h2>Blanqueamiento de los Arrecifes</h2>
+            <p>Cuando los corales se “estresan” por factores como la contaminación, o el cambio de la temperatura del agua, expulsan a las microalgas de su interior, y se blanquean, produciendo la muerte del coral. Los arrecifes del planeta se enfrentan hoy a graves problemas. Cada vez están más amenazados y los científicos estiman que las amenazas a las que están expuestos estos ecosistemas delicados, que incluyen el cambio climático, la contaminación, la pesca excesiva y la sedimentación, podría derivar en la pérdida de un tercio de los arrecifes del mundo dentro de los próximos 30 años.
+</p>
+            <p><a href="page-1.html">Diversidad de Arrecifes Coralinos</a> Como vimos anteriormente en el link anterior estos importantes arrecifes están en peligro afectados por factores como el cambio climático, sobrepesca entre otros, causando su deterioro y muchas veces la muerte irrecuperable de estos. Acá te explicamos que es lo que pasa. Los corales contienen plantas microscópicas denominadas zooxantelas que dan color a sus tejidos y le proporcionan alimento a través de la fotosíntesis. Sin estas minúsculas plantas, los corales no pueden sobrevivir o deponer las grandes cantidades de caliza que contienen sus esqueletos. Cuando los corales están estresados, las zooxantelas son los primeros elementos que salen. Los corales estresados expelen las zooxantelas, y se vuelven blancos o más claros. Si las zooxantelas no regresan a los tejidos coralinos, el coral muere.</p>
+            <figure>
+                <canvas id="uci"></canvas>
+                <figcaption>https://es.statista.com/</figcaption>
+            </figure>
+            <p> No estamos condenados a que todos los corales se pierdan debido al blanquemaiento, sin embargo debemos actuar hoy mismo si queremos proteger los corales para las
+ futuras generaciones.
+ </p>
+
+            </section>
+            <footer class="col-12 py-2 mt-4">
+                <small class="text-black-50 d-flex justify-content-between align-items-center">
+                    <span>Martina Rivas</span>
+                    <span>clase 10</span>
+                </small>
+            </footer>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script>
+        Chart.defaults.global.defaultFontFamily = "'Lucida Console', 'Monaco', 'monospace'";
+        new Chart(document.getElementById('uci').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ["2020"],
+                datasets: [{
+                    label: 'SUDESTE ASIÁTICO',
+                    borderColor: '#cc2f59',
+                    backgroundColor: '#cc2f59',
+                    borderWidth: 1,
+                    pointRadius: 2,
+                    lineTension: 0,
+                    data: [94]
+                }, {
+                    label: 'ATLANTICO',
+                    borderColor: '#2b89f5',
+                    backgroundColor: '#2b89f5',
+                    borderWidth: 1,
+                    pointRadius: 2,
+                    lineTension: 0,
+                    data: [75]
+                }, {
+                    label: 'OCEÁNO ÍNDICO',
+                    borderColor: '#6d2b65', // noten que este color coincide con el de h1{…} en el CSS
+                    backgroundColor: '#6d2b65', // esto para darle consistencia a los colores en uso
+                    borderWidth: 1,
+                    pointRadius: 2,
+                    lineTension: 0,
+                    data: [66]
+                }, {
+                      label: 'MEDIO ORIENTE',
+                      borderColor: '#C81EF1', // noten que este color coincide con el de h1{…} en el CSS
+                      backgroundColor: '#C81EF1', // esto para darle consistencia a los colores en uso
+                      borderWidth: 1,
+                      pointRadius: 2,
+                      lineTension: 0,
+                      data: [65]
+                }, {
+                          label: 'PACÍFICO',
+                          borderColor: '#B4F11E', // noten que este color coincide con el de h1{…} en el CSS
+                          backgroundColor: '#B4F11E', // esto para darle consistencia a los colores en uso
+                          borderWidth: 1,
+                          pointRadius: 2,
+                          lineTension: 0,
+                          data: [48]
+                }, {
+                                  label: 'AUSTRALIA',
+                                  borderColor: '#1EF1B4', // noten que este color coincide con el de h1{…} en el CSS
+                                  backgroundColor: '#1EF1B4', // esto para darle consistencia a los colores en uso
+                                  borderWidth: 1,
+                                  pointRadius: 2,
+                                  lineTension: 0,
+                                  data: [14]
+                }]
+            },
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'PORCENTAJE DE CORALES BLANQUEADOS'
+                },
+                tooltips: {
+                    position: 'nearest',
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            minRotation: 90
+                        }
+                    }]
+                }
+            },
+
+        });
+    </script>
+    <!-- Lo JS de Bootstrap, que dependen de jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
